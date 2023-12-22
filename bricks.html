@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Project</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section id="combine">
+        <header>
+            <div><img src="images/logo.jpg" alt="KS logo"></div>
+            <h1>Kaelyn Syrdahl</h1>
+            <div id="gradient"></div>
+        </header>
+        <nav>
+            <ul id="desktop" class="dropdown">
+                <li><a href="#"><i class="fas fa-bars" id="list"></i></a></li>
+            </ul>
+            <ul class="linearNav">
+                <li><a href="index.html">Projects</a></li>
+                <li class="line"></li>
+                <li id="resume"><a href="resume.html">Resume</a></li>
+                <li class="line"></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="overlay" class="hidden">
+            <article>
+                 <ul>
+                    <li><a href="index.html">Projects</a></li>
+                    <li class="line"></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li class="line"></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </article>
+        </section>
+    </section>
+    <main class="projects" id="bricks">
+        <div class="flexyflip" id="title">
+            <section>
+                <h1>Brick Project:</h1>
+                <h2>City of Davis Seal</h2>
+            </section>
+            <img src="images/bricks.png" alt="Brick Project on iphone" id="bricks">
+        </div>
+        <div class="content">
+            <div class="flexy">
+                <article>
+                    <h3>What is the Brick Project?</h3>
+                    <p  class="summary">
+                        The Brick Project stems from a larger art installation called the Davis Centennial Seal. It is placed in the center of downtown Davis. Around this seal are commemorative bricks. Some of these bricks where donated while others represent important people and families in the history of Davis. The seal is a large round metal seal designed by the local artist Susan Shelton. This historic seal can be found near the popular Davis native coffee shop Mishkas.</p>
+                    <p class="summary">
+                        To learn more about the Davis Centennial Seal and the artist who designed it click the link below to visit the City of Davis official website.</p>
+                    <div class="more"><a href="https://www.cityofdavis.org/city-hall/city-manager-s-office/arts-culture/davis-centennial-seal">Learn More!</a></div>
+                    <p id="quote">
+                        “The Centennial Seal tells an amazing story about the Davis community — who we were, who we are, and who we aspire to be. It creates an important focal point in our downtown, and hopefully one that continues to draw people together.”</p>
+                    <p>- City of Davis, Mayor Gloria Partida</p>
+                </article>
+                <img src="images/seal.png" alt="Davis Centennial Seal" id="seal">
+            </div>
+
+            <article class="flexyflip">
+                <section>
+                    <h2>Problem</h2>
+                    <p>
+                        Davis had this beautiful piece of art that so many people in the community were able to donate to help create and then become part of the art instillation through their own engraved brick. However, the problem was that there were so many bricks that these donors could not find their engraved brick.</p>
+                    <h2>Solution</h2>
+                    <p>
+                        The proposed solution for this issue was to create a responsive platform with an interactive map of the donated bricks surrounding the seal allowing donors to find the bricks that they donated. The primary goal of the project was to solve the original problem by allowing users to search for a name and be shown where that brick is located. However, then I came up with a secondary goal which was to provide an interactive map where users can click on certain bricks and see who else in the community has contributed to the bricks.</p>
+                </section>
+                <img src="images/problem.png" alt="Davis Centennial Seal" class="smallerimg">
+            </article>
+
+            <h2>Research</h2>
+
+            <article id="research">
+                <div class="flexy">
+                    <section>
+                        <h3>Target Audience</h3>
+                        <div class="greenline"></div>
+                        <p>
+                            My target audience is long-time Davis residents aged 40 to 70 years of age. They will have lived in Davis long enough to have decided to donate money to the construction of the monument and be given a brick. They still live in Davis and frequently pass by the Centennial Seal to go to Mishkas.</p>
+                    </section>
+                    <img src="images/davisMap.png" alt="Map of Davis" >
+                </div>
+                <div class="flexyflip">
+                    <section  id="interviews">
+                        <h3>Interviews</h3>
+                        <div class="greenline"></div>
+                        <p>
+                            I conducted interviews of people from my target audience. In these interviews, I asked about their confidence with using technology and they indicated that they were fairly confident which was surprising to me because they are from an older audience. However, they did say they prefer to not use technology most of the time. This made me realize how important it is that I make the website simple and quick to use.</p>
+                        <p>
+                            If I create something that is too complicated or has too many options they are more likely to give up on the website, than someone who uses technology often and might prefer more options. I originally had planned to add extra information about each brick to the website, but decided to simplify it to only display what is written on the brick so my target audience would be more likely to use the website.</p>
+                    </section>
+                    <img src="images/simplify.png" alt="Simplistic Design & Minimal Text" >
+
+                </div>
+            </article>
+
+            <h2>Visual Design</h2>
+
+            <article id="visual">
+                <div class="flexy">
+                    <section>
+                        <h3>Color Scheme</h3>
+                        <div class="greenline"></div>
+                        <p>
+                            During my target audience interviews, I also learned that one thing the brick donnors have in common is their love for Davis. As a result, I tried to reflect Davis in my color choices. I picked colors that were consistent with the City of Davis website, blue, green, and golden yellow. </p>
+                    </section>
+                    <img src="images/bricksColors.png" alt="Bricks Colorscheme" id="bricksColor">
+                </div>
+                <div class="flexyflip">
+                    <section>
+                        <h3>Iterations</h3>
+                        <div class="greenline"></div>
+                        <p>
+                            My map design went through multiple iterations. I originally displayed all of the individual bricks in the map when the webpage was first opened. However, I received feedback that this was overwhelming. My question was how do allow users to access all of the bricks but make that information more palatable.</p>
+                    </section>
+                    <img src="images/bricksIterations.png" alt="Bricks Iteration before & after" >
+                </div>
+                <div class="flexy" id="inspiration">
+                    <section>
+                        <p>
+                            I decided to do more research on designs like concert seating like Ticketmaster which also deal with lots of individual interactive elements. I discovered that what they typically do is chunk the information into sections for users to click on. I took that idea and created blocked out sections for the bricks and when the user clicks on one of the sections, then the individual bricks appear. I found this helped decrease some of the cognitive overload.</p>
+                    </section>
+                    <img src="images/bricksInspiration.png" alt="Ticketmaster Seating screenshot" >
+                </div>
+            </article>
+            
+            <h2>Main Features</h2>
+            <article id="features">
+                <div class="flexyflip">
+                    <section>
+                        <h3>Search Bar</h3>
+                        <div class="greenline"></div>
+                        <p>
+                            I added a search bar to the bottom of the page to make user interactions easier. There is a data base of names on the bricks that users can search for by either typing in the search bar or scroll through the names which are listed alphabetically. This feature is mostly for people who know what name is on the brick they are searching for but want to know where it is located.</p>
+                    </section>
+                    <section class="searchvideo">
+                        <video loop autoplay muted playsinline>
+                            <source src="media/searchbar.webm" type="video/webm">
+                            <source src="media/searchbar.mp4" type="video/mp4">
+                    
+                            <p>Your browser doesn't support HTML5 video.
+                                Here is a <a href="media/searchbar.mp4">link to the video</a> instead.</p>
+                        </video>
+                    </section>
+                </div>
+                <div class="flexy">
+                    <section>
+                        <h3>Individual Bricks</h3>
+                        <div class="greenline"></div>
+                        <p>
+                            If users click on a one of the 8 lettered sections the graphic will zoom in to that section and show the individual bricks in that section. Each individual brick is interactive and if a user taps on the brick it will pull up a pop up which shows what is written on that brick. This feature is for users who want to find and learn more about a brick physical they are looking at in the site of the Centennial Seal.</p>
+                    </section>
+                    <section class="searchvideo">
+                        <video loop autoplay muted playsinline>
+                            <source src="media/individual.webm" type="video/webm">
+                            <source src="media/individual.mp4" type="video/mp4">
+                    
+                            <p>Your browser doesn't support HTML5 video.
+                                Here is a <a href="media/individual.mp4">link to the video</a> instead.</p>
+                        </video>
+                    </section>
+                </div>
+                <div class="flexyflip">
+                    <section>
+                        <h3>Zoom</h3>
+                        <div class="greenline"></div>
+                        <p>
+                            Once users search or click on a brick that brick is outlined in yellow. This is so they know which brick has been selected and use it to find the brick on site in the physical space. Find their brick it was important for them to be able to zoom in and out to see the whole map as well as move the map around in the frame.</p>
+                    </section>
+                    <section class="searchvideo">
+                        <video loop autoplay muted playsinline>
+                            <source src="media/zoom.webm" type="video/webm">
+                            <source src="media/zoom.mp4" type="video/mp4">
+                    
+                            <p>Your browser doesn't support HTML5 video.
+                                Here is a <a href="media/zoom.mp4">link to the video</a> instead.</p>
+                        </video>
+                    </section>
+                </div>
+            </article>
+            <article>
+                <h2>Reflection</h2>
+                <p>
+                    This project was big challenge for me and I knew it would be, but I wanted to chanllenge myself. I think my strong suit in website design is my addition of illustrations, so I picked this project specifically because I knew it would not be illustration heavy and would instead force me to focus more heavily on JavaScript and User Interactions.</p>
+                <p>
+                    I learned so much about JavaScript and how to use JSON files with this project. I pushed myself to use JSON to populate the search bar and other parts of the HTML and I actually got it to work. Even though everything is not as polished as it could be, I am still extremely proud of everything I accomplished in this project especially with the JavaScript.</p>
+                <p>
+                    This project is meant to be a stepping stone for someone else to continue working on, so it is still a work in progress.  I created the visual design, the skeleton for the code, and only two rows of the code has the data imputed for the bricks. Another student asked to continue the project after I graduated and is currently using the notes from my code to take on the second half of the project which is to polish the code and finish imputing all of the data for the bricks. I am looking forward to seeing how the next person alters my code and visual design to make it even better.</p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="socials">
+            <p><a href="https://www.linkedin.com/in/kaelyn-syrdahl-996014243/"><i class="fab fa-linkedin"></i></a></p>
+            <p><a href="https://www.instagram.com/ks.thehalfblood.art/?next=%2F"><i class="fab fa-instagram"></i></a></p>
+            <p><a href="mailto:&#107;&#097;&#115;&#121;&#114;&#100;&#097;&#104;&#108;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;"><i class="fas fa-envelope"></i></a></p>
+        </div>
+    </footer>
+</body>
+</html>

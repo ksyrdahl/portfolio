@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WePave</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section id="combine">
+        <header>
+            <div><img src="images/logo.jpg" alt="KS logo"></div>
+            <h1>Kaelyn Syrdahl</h1>
+            <div id="gradient"></div>
+        </header>
+        <nav>
+            <ul id="desktop" class="dropdown">
+                <li><a href="#"><i class="fas fa-bars" id="list"></i></a></li>
+            </ul>
+            <ul class="linearNav">
+                <li><a href="index.html">Projects</a></li>
+                <li class="line"></li>
+                <li id="resume"><a href="resume.html">Resume</a></li>
+                <li class="line"></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="overlay" class="hidden">
+            <article>
+                 <ul>
+                    <li><a href="index.html">Projects</a></li>
+                    <li class="line"></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li class="line"></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </article>
+        </section>
+    </section>
+    <main class="projects">
+        <div class="flexyflip" id="title">
+            <section>
+                <h1>WePave:</h1>
+                <h2>Mobile App</h2>
+            </section>
+            <img src="images/wepave.png" alt="WePave Collage" id="wepave">
+        </div>
+        <div class="content">
+            <article>
+                <h3>How can we make the world more disability friendly?</h3>
+                <p>WePave is a Figma Prototype for an app I designed that allows the individuals to both view ratings and rate locations on their disability friendliness based on personal experiences. If it was to be developed it would work like a typical rating app where users create a profile, access their favorites locations, edit their reviews, search through categories, etc.</p>
+                <p>I had the idea for this project after noticing many of the lecture halls and buildings at UC Davis were not particularly functional for mobility disabilities. My goal for this app is that it would help relieve some stress from the lives of the disabled community and give them a place where they can foster relationships within that community.</p>
+            </article>
+
+            <h2>Research</h2>
+            <p>For my background I researched and created personas for three main target audiences:</p>
+
+            <article id="research">
+                <div class="flexy">
+                    <img src="images/novice.png" alt="Persona for Novice">
+                    <section>
+                        <h3>Novice</h3>
+                        <div class="orangeline"></div>
+                        <p>This audience were previously able bodied and downloads the app looking for guidance form others with more experience.</p>
+                    </section>
+                </div>
+                <div class="flexy">
+                    <img src="images/advocate.png" alt="Persona for Advocate">
+                    <section>
+                        <h3>Advocate</h3>
+                        <div class="orangeline"></div>
+                        <p>This audience might have a loved one or friend with a disability and downloads the app to rate places based on experiences they have had with their loved ones.</p>
+                    </section>
+                </div>
+                <div class="flexy">
+                    <img src="images/expert.png" alt="Persona for Expert">
+                    <section>
+                        <h3>Expert</h3>
+                        <div class="orangeline"></div>
+                        <p>This audience has been disabled for a longer period of time and is looking to find a community where they can share their experiences.</p>
+                    </section>
+                </div>
+            </article>
+
+            <h2>Visual Design</h2>
+
+            <article id="visual">
+                <div class="flexy">
+                    <section>
+                        <h3>Color Scheme</h3>
+                        <div class="orangeline"></div>
+                        <p>One of the main goals for WePave was to help foster a sense of community among the users. For my color scheme I picked bright colors that would create a playful, welcoming community atmosphere. </p>
+                    </section>
+                    <img src="images/wpColors.png" alt="WePave Colorscheme">
+                </div>
+                <div class="flexyflip">
+                    <section>
+                        <h3>Logo Design</h3>
+                        <div class="orangeline"></div>
+                        <p>The colors are analogous and in the logo those colors are overlapping one another in a circle, as a metaphor. Each color represents one of the main target audiences and by having them grouped in the circle it shows the harmony that can be created when we unite as a community. </p>
+                    </section>
+                    <img src="images/wpLogo.png" alt="WePave Logo" class="smallerimg" id="logo">
+                </div>
+            </article>
+            
+            <h2>Main Features</h2>
+            <article id="features">
+                <div class="flexy">
+                    <section>
+                        <h3>Login Screen</h3>
+                        <div class="orangeline"></div>
+                        <p>When someone first opens the app they are given the option to sign up, log in, or sign up later. I wanted the users to sign up if they hadn’t already. I realized it was important to allow users to explore the app without needing to sign up in order to create trust because they might not feel comfortable sharing their information. I added a “sign up later” button but made it smaller to encourage users sign up.  </p>
+                    </section>
+                    <img src="images/wplogin.png" alt="WePave Login Screen" class="smallerimg">
+                </div>
+                <div class="flexyflip">
+                    <section>
+                        <h3>Homescreen</h3>
+                        <div class="orangeline"></div>
+                        <p>Next, the user is brought to the homescreen. I knew I would need a search bar where users can search for locations. I realized users might not know what to search, so I added location categories to browse through the highest rated nearby locations. </p>
+                    </section>
+                    <img src="images/wphome.png" alt="WePave Homescreen" class="smallerimg">
+                </div>
+                <div class="flexy">
+                    <section>
+                        <h3>Search</h3>
+                        <div class="orangeline"></div>
+                        <p>I wanted the search feature to feel familiar to other apps users might already utilize, so it is heavily influenced by the “Yelp” search feature. It provides the location name, star rating, number of reviews, and street address. </p>
+                    </section>
+                    <img src="images/wpsearch.png" alt="WePave Searchbar screen" class="smallerimg">
+                </div>
+                <div class="flexyflip">
+                    <section>
+                        <h3>Ratings</h3>
+                        <div class="orangeline"></div>
+                        <p>When the user clicks on a location, they have the option to read reviews, write a review, or rate the location based on different categories. I didn't want users to feel like they had to write a review to leave a star rating, so I made the different category's star ratings separate from the overall review. </p>
+                    </section>
+                    <img src="images/wpratings.png" alt="Example screen for rating locations" class="smallerimg">
+                </div>
+                <div class="flexy">
+                    <section>
+                        <h3>Profile</h3>
+                        <div class="orangeline"></div>
+                        <p>Once the user creates a profile, they have the option to edit their information. For example, one of the options of the app is to have the ability to add what they consider their primary status which can be their disability or that they are an advocate. This will add the appropriate icon next to their ratings. However, I received feedback that not everyone would feel comfortable with labeling themselves, so I provided an option to not pick a “status.”</p>
+                    </section>
+                    <img src="images/wpprofile.png" alt="Example profile page" class="smallerimg">
+                </div>
+            </article>
+            <article>
+                <h2>Reflection</h2>
+                <p>
+                    This project was one of my first attempts at creating a user interface platform. Looking back with the knowledge I have now, there is a lot I would do differently if I could start over.</p>
+                <p>
+                    First, I would have spent more time in the research phase and interviewed people from the community for which I was designing.</p>
+                <p>
+                    Second, I would have tested my prototype design on more users. I originally restricted my testers to colleagues. However, if I had gone out and searched for testers who had no background in design I could have received better feedback on what was and wasn't working well in my design.</p>
+                <p>                
+                    Third, I would have created a graphic standard for my app. My goal for this project was to focus on the prototype and usability. However, because I focused heavily on the usability of the design, the visual design ended up having many inconsistencies. In the end I believe that this also damaged my usability as inconsistencies in the visual design can impact and confuse users.</p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="socials">
+            <p><a href="https://www.linkedin.com/in/kaelyn-syrdahl-996014243/"><i class="fab fa-linkedin"></i></a></p>
+            <p><a href="https://www.instagram.com/ks.thehalfblood.art/?next=%2F"><i class="fab fa-instagram"></i></a></p>
+            <p><a href="mailto:&#107;&#097;&#115;&#121;&#114;&#100;&#097;&#104;&#108;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;"><i class="fas fa-envelope"></i></a></p>
+        </div>
+    </footer>
+</body>
+</html>
