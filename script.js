@@ -13,7 +13,7 @@
         console.log(screenWidth);
         if (screenWidth < 1399){
             bridgebutton.setAttribute("href","#"); 
-            alert("This project is not meant for screens smaller than 1400 pixels. Please explore this site on a larger screen. Thank you! :)");
+            alert("This project is meant for screens more than 1400 pixels. Please explore this site on a larger screen. Thank you! :)");
         }
         else{
             bridgebutton.setAttribute("href","https://ksyrdahl.github.io/des157a/studio2/index.html"); 
