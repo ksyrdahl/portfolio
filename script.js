@@ -5,6 +5,7 @@
 
     const overlay = document.querySelector('#overlay');
     const nav = document.querySelector('nav');
+    const mobilei = document.querySelector('nav i')
     // const indeximg = document.querySelector('#index img');
 
     // document.querySelector('.more').addEventListener('mouseover', function (event){
@@ -27,11 +28,11 @@
         console.log(event.target.id);
         console.log(overlay.className);
         if (overlay.getAttribute('class') == 'showing') {
-            event.target.className = 'fas fa-bars';
+            mobilei.className = 'fas fa-bars';
             overlay.className = 'hidden';
         }
         else{
-            event.target.className = 'fas fa-times';
+            mobilei.className = 'fas fa-times';
             overlay.className = 'showing';
             nav.style.zIndex = "3";
         }
