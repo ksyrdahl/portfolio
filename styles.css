@@ -141,16 +141,21 @@
     }
 
     header h1{
-        /* Kaelyn Syrdahl text styling */
         margin: 0;
-        margin-left:5px;
         align-self: center;
-        font-size: 1.4em;
-        text-transform: uppercase;
-        font-weight: bolder;
     }
 
-    #gradient{
+    header h1 a{
+        /* Kaelyn Syrdahl text styling */
+        margin-left:5px;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-decoration: none;
+        color: #B06BA4;
+    }
+
+    #gradient a{
         /* This makes the text a value  grdient by putting a white box on top */
         position: absolute;
         left:  5em;
