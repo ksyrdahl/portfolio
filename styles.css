@@ -452,8 +452,8 @@
 /* Brick Project */
     #seal {
         position:  absolute;
-        right: 0;
-        top: 113vh;
+        right: -10px;
+        top: 158vh;
         width: 47vw;
     }
 
