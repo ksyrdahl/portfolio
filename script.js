@@ -5,18 +5,20 @@
 
     const overlay = document.querySelector('#overlay');
     const nav = document.querySelector('nav');
-    const mobilei = document.querySelector('nav i')
-    // const indeximg = document.querySelector('#index img');
+    const mobilei = document.querySelector('nav i');
+    const bridgebutton =  document.querySelector('#bridgebutton');
 
-    // document.querySelector('.more').addEventListener('mouseover', function (event){
-    //     console.log("i was touched");
-    //     indeximg.style.transform = 'scale(1.1)';
-    // });
-
-    // document.querySelector('.more').addEventListener('mouseout', function (event){
-    //     console.log("i was touched");
-    //     indeximg.style.transform = 'scale(1)';
-    // });
+    bridgebutton.addEventListener('click', function (event){
+        const screenWidth = window.innerWidth;
+        console.log(screenWidth);
+        if (screenWidth < 1399){
+            bridgebutton.setAttribute("href","#"); 
+            alert("This project is not meant for screens smaller than 1400 pixels. Please explore this site on a larger screen. Thank you! :)");
+        }
+        else{
+            bridgebutton.setAttribute("href","https://ksyrdahl.github.io/des157a/studio2/index.html"); 
+        }
+    });
 
 // Overlay for navigation drop down
 
