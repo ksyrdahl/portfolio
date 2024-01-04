@@ -142,18 +142,23 @@
     }
 
     header h1{
+        display: block;
         margin: 0;
         align-self: center;
     }
 
     header h1 a{
         /* Kaelyn Syrdahl text styling */
-        margin-left:5px;
         font-size: 0.5em;
+        margin-left: none;
+        display: block;
+        margin: 0;
+        align-self: center;
         text-transform: uppercase;
         font-weight: bolder;
         text-decoration: none;
         color: #B06BA4;
+        text-align: left;
     }
 
     #gradient a{
