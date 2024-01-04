@@ -148,7 +148,7 @@
     header h1 a{
         /* Kaelyn Syrdahl text styling */
         margin-left:5px;
-        font-size: 1em;
+        font-size: 0.7em;
         text-transform: uppercase;
         font-weight: bolder;
         text-decoration: none;
@@ -593,6 +593,11 @@
             main article{
                 width: 69vw;
                 margin: auto;
+            }
+
+            header h1 a{
+                /* Kaelyn Syrdahl text styling */
+                font-size: 1em;
             }
 
             #intro{
