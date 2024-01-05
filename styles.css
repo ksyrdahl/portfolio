@@ -453,8 +453,9 @@
     #seal {
         position:  absolute;
         right: -10px;
-        top: 158vh;
+        top: 148vh;
         width: 47vw;
+        display: none;
     }
 
     #quote{
@@ -884,6 +885,7 @@
             #seal {
                 top: 70vh;
                 width: 40vw;
+                display: block;
             }
 
             #quote{
